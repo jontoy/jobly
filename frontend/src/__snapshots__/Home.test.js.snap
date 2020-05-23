@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when user is logged in 1`] = `
+<DocumentFragment>
+  <div
+    class="Home jumbotron"
+  >
+    <h1
+      class="display-4"
+    >
+      Jobly
+    </h1>
+    <p
+      class="lead"
+    >
+      All the jobs in one, convenient place.
+    </p>
+    Welcome Back!
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when user is logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="Home jumbotron"
+  >
+    <h1
+      class="display-4"
+    >
+      Jobly
+    </h1>
+    <p
+      class="lead"
+    >
+      All the jobs in one, convenient place.
+    </p>
+  </div>
+</DocumentFragment>
+`;

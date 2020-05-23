@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-const CompanyCard = ({id, title, equity, salary, company_handle, state, apply, unapply}) => {
+import UserContext from './userContext';
 
+const JobCard = ({id, title, equity, salary, company_handle, apply, unapply}) => {
+    const {appliedIds} = useContext(UserContext);
     const applyButton = () => {
         return <button className="btn btn-success ml-auto" onClick={() => apply(id)}>Apply</button>
     }
@@ -17,10 +19,10 @@ const CompanyCard = ({id, title, equity, salary, company_handle, state, apply, u
                 <br/>
                 {equity ? <span>Equity: {equity}</span> : null}
             </p>
-            {state === 'applied' ? unApplyButton() : applyButton()}
+            {appliedIds.includes(id) ? unApplyButton() : applyButton()}
         </div>
     )
 }
 
-export default CompanyCard;
+export default JobCard;
 

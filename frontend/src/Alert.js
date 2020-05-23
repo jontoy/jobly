@@ -3,8 +3,8 @@ import React from 'react';
 function Alert({type="danger", msgs=[]}) {
     return (
         <div className={`alert alert-${type}`} role="alert">
-            {msgs.map(msg => (
-                <p className="small">
+            {msgs.map((msg, idx) => (
+                <p key={idx} className="small">
                     {msg}
                 </p>
             ))}

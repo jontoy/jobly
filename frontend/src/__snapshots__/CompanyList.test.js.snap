@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="CompanyList list-unstyled"
+  />
+</DocumentFragment>
+`;
+
+exports[`matches snapshot with jobs data 1`] = `
+<DocumentFragment>
+  <ul
+    class="CompanyList list-unstyled"
+  >
+    <li>
+      <a
+        href="/companies/company-one"
+      >
+        <div
+          class="CompanyCard card p-2 mb-1"
+        >
+          <h5
+            class="card-title"
+          >
+            Company One
+          </h5>
+          <img
+            alt="Company One"
+            class="img-thumbnail ml-auto"
+            src="office_icon.png"
+          />
+          <p
+            class="card-text"
+          >
+            test1
+          </p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a
+        href="/companies/company-two"
+      >
+        <div
+          class="CompanyCard card p-2 mb-1"
+        >
+          <h5
+            class="card-title"
+          >
+            Company Two
+          </h5>
+          <img
+            alt="Company Two"
+            class="img-thumbnail ml-auto"
+            src="https://image.flaticon.com/icons/svg/25/25447.svg"
+          />
+          <p
+            class="card-text"
+          >
+            test2
+          </p>
+        </div>
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

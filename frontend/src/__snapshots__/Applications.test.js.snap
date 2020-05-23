@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Applications container mt-4"
+  >
+    <h2
+      class="display-5"
+    >
+      Current Applications
+    </h2>
+    <ul
+      class="JobsList list-unstyled"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when user has existing applications 1`] = `
+<DocumentFragment>
+  <div
+    class="Applications container mt-4"
+  >
+    <h2
+      class="display-5"
+    >
+      Current Applications
+    </h2>
+    <ul
+      class="JobsList list-unstyled"
+    >
+      <li>
+        <div
+          class="CompanyCard card p-2 mb-1"
+        >
+          <h5
+            class="card-title"
+          >
+            fake job
+          </h5>
+          <p
+            class="card-text"
+          >
+            <br />
+          </p>
+          <button
+            class="btn btn-danger ml-auto"
+          >
+            Remove Application
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

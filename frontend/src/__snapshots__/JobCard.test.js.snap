@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="CompanyCard card p-2 mb-1"
+  >
+    <h5
+      class="card-title"
+    />
+    <p
+      class="card-text"
+    >
+      <br />
+    </p>
+    <button
+      class="btn btn-success ml-auto"
+    >
+      Apply
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when user has applied to job 1`] = `
+<DocumentFragment>
+  <div
+    class="CompanyCard card p-2 mb-1"
+  >
+    <h5
+      class="card-title"
+    >
+      fake job
+    </h5>
+    <p
+      class="card-text"
+    >
+      <span>
+        Salary: 140000
+      </span>
+      <br />
+      <span>
+        Equity: 0.01
+      </span>
+    </p>
+    <button
+      class="btn btn-danger ml-auto"
+    >
+      Remove Application
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when user has not applied to job 1`] = `
+<DocumentFragment>
+  <div
+    class="CompanyCard card p-2 mb-1"
+  >
+    <h5
+      class="card-title"
+    >
+      fake job
+    </h5>
+    <p
+      class="card-text"
+    >
+      <span>
+        Salary: 140000
+      </span>
+      <br />
+      <span>
+        Equity: 0.01
+      </span>
+    </p>
+    <button
+      class="btn btn-success ml-auto"
+    >
+      Apply
+    </button>
+  </div>
+</DocumentFragment>
+`;

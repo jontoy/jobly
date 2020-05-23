@@ -1,4 +1,6 @@
 import axios from 'axios';
+import config from './config';
+const DATABASE_URL = config.DATABASE_URL || 'https://localhost:3001';
 
 class JoblyApi {
     static async request(endpoint, paramsOrData = {}, verb = "get") {
@@ -9,7 +11,7 @@ class JoblyApi {
       try {
         return (await axios({
           method: verb,
-          url: `http://localhost:3001/${endpoint}`,
+          url: `${DATABASE_URL}/${endpoint}`,
           [verb === "get" ? "params" : "data"]: paramsOrData})).data;
           // axios sends query string data via the "params" key,
           // and request body data via the "data" key,

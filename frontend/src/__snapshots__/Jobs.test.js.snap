@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when user is logged in 1`] = `
+<DocumentFragment>
+  <div
+    class="Jobs container"
+  >
+    <form
+      class="Searchbox form-inline mt-3"
+    >
+      <input
+        class="form-control form-control-lg flex-grow-1"
+        name="search"
+        placeholder="Search..."
+        type="search"
+        value=""
+      />
+    </form>
+    <ul
+      class="JobsList list-unstyled"
+    />
+    <nav
+      aria-label="Pagination"
+      class="Pagination"
+    >
+      <ul
+        class="pagination"
+      >
+        <li
+          class="page-item"
+        >
+          <button
+            class="page-link"
+          >
+            Previous
+          </button>
+        </li>
+        <li
+          class="page-item"
+        >
+          <button
+            class="page-link"
+          >
+            1
+          </button>
+        </li>
+        <li
+          class="page-item"
+        >
+          <button
+            class="page-link"
+          >
+            Next
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="SelectField"
+    >
+      Show me 
+      <select>
+        <option
+          value="10"
+        >
+          10
+        </option>
+        <option
+          value="20"
+        >
+          20
+        </option>
+        <option
+          value="50"
+        >
+          50
+        </option>
+        <option
+          value="100"
+        >
+          100
+        </option>
+      </select>
+       results per page
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -4,7 +4,7 @@ import JobCard from './JobCard';
 const JobsList = ({jobs, apply, unapply}) => {
     return (
         <ul className="JobsList list-unstyled">
-            {jobs.map(({id, title, salary, equity, company_handle, state}) => 
+            {jobs.map(({id, title, salary, equity, company_handle}) => 
             <li key={id}>
                 <JobCard 
                     id={id} 
@@ -12,7 +12,6 @@ const JobsList = ({jobs, apply, unapply}) => {
                     salary={salary} 
                     equity={equity} 
                     company_handle={company_handle} 
-                    state={state} 
                     apply={apply} 
                     unapply={unapply}/>
             </li>)}

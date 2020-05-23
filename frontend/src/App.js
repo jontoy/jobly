@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [appliedIds, setAppliedIds] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [token, setToken] = useLocalStorageState('token', {});
   useEffect( () => {
@@ -17,8 +18,10 @@ function App() {
         let {username} = decode(token);
         const user = await JoblyApi.getUser(username);
         setCurrentUser(user);
+        setAppliedIds(user.jobs.map(job => job.id));
       } catch (err) {
         setCurrentUser(null);
+        setAppliedIds([]);
       }
       setIsLoading(false);
     }
@@ -27,6 +30,7 @@ function App() {
   }, [token])
   const logout = () => {
     setCurrentUser(null);
+    setAppliedIds([]);
     setToken('');
   }
   if(isLoading){
@@ -36,7 +40,7 @@ function App() {
   }
 
   return (
-    <UserContext.Provider value={{currentUser, setCurrentUser, setToken}}>
+    <UserContext.Provider value={{currentUser, setCurrentUser, setToken, appliedIds, setAppliedIds}}>
       <div className="App bg-light">
         <Navigation currentUser={currentUser} logout={logout}/>
         <Routes />

@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when user is logged in 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Pagination"
+    class="Pagination"
+  >
+    <ul
+      class="pagination"
+    >
+      <li
+        class="page-item"
+      >
+        <button
+          class="page-link"
+        >
+          Previous
+        </button>
+      </li>
+      <li
+        class="page-item"
+      >
+        <button
+          class="page-link"
+        />
+      </li>
+      <li
+        class="page-item"
+      >
+        <button
+          class="page-link"
+        >
+          Next
+        </button>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

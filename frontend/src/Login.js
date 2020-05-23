@@ -45,10 +45,10 @@ const Login = () => {
             <div className="card">
                 <div className="card-header">
                     <ul className="nav nav-tabs card-header-tabs ml-auto">
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <button className={isNewUser ? 'nav-link' : 'nav-link active'} onClick={() => setIsNewUser(false)}>Login</button>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <button className={isNewUser ? 'nav-link active' : 'nav-link'}onClick={() => setIsNewUser(true)}>Signup</button>
                         </li>
 

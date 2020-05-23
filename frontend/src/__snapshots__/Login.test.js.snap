@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot when user is logged in 1`] = `
+<DocumentFragment>
+  <div
+    class="Login container"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card-header"
+      >
+        <ul
+          class="nav nav-tabs card-header-tabs ml-auto"
+        >
+          <li
+            class="nav-item"
+          >
+            <button
+              class="nav-link active"
+            >
+              Login
+            </button>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <button
+              class="nav-link"
+            >
+              Signup
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="card-body"
+      >
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              for="username"
+            >
+              Username
+            </label>
+            <input
+              class="form-control"
+              id="username"
+              name="username"
+              placeholder="Username"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            class="btn btn-info"
+          >
+            Log in
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`matches snapshot when user is logged out 1`] = `
+<DocumentFragment>
+  <div
+    class="Login container"
+  >
+    <div
+      class="card"
+    >
+      <div
+        class="card-header"
+      >
+        <ul
+          class="nav nav-tabs card-header-tabs ml-auto"
+        >
+          <li
+            class="nav-item"
+          >
+            <button
+              class="nav-link active"
+            >
+              Login
+            </button>
+          </li>
+          <li
+            class="nav-item"
+          >
+            <button
+              class="nav-link"
+            >
+              Signup
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="card-body"
+      >
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              for="username"
+            >
+              Username
+            </label>
+            <input
+              class="form-control"
+              id="username"
+              name="username"
+              placeholder="Username"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <label
+              for="password"
+            >
+              Password
+            </label>
+            <input
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+            />
+          </div>
+          <button
+            class="btn btn-info"
+          >
+            Log in
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

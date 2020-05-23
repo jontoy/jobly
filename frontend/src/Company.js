@@ -3,12 +3,13 @@ import {useParams} from 'react-router-dom';
 import JoblyApi from './JoblyApi';
 import JobsList from './JobsList';
 import CompanyCard from './CompanyCard';
-
+import useApply from './hooks/useApply';
 
 const Company = () => {
     const {handle} = useParams();
     const [isLoading, setIsLoading] = useState(true);
     const [company, setCompany] = useState({});
+    const [apply, unapply] = useApply();
 
     useEffect(() => {
         async function getCompany() {
@@ -18,6 +19,7 @@ const Company = () => {
         }
         getCompany();
       }, [handle]);
+
     if (isLoading) {
         return <p>Loading &hellip;</p>;
     }
@@ -26,7 +28,7 @@ const Company = () => {
         <div className="Company">
             <CompanyCard description={description} handle={handle} name={name} logo_url={logo_url} />
             <div className="container">
-              <JobsList jobs={jobs} />
+              <JobsList jobs={jobs} apply={apply} unapply={unapply}/>
             </div>
         </div>
     )
